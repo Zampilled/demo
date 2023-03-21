@@ -5,7 +5,7 @@
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Demo</name>
+    <name>Alex Zamolotskikh Test Task</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="azamolot@tcd.ie" url="https://www.zampilled.com">Zampilled</vendor>
@@ -13,7 +13,7 @@
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
-    <description>test plugin for Jetbrains internship trying it out </description>
+    <description>Plugin for Jetbrains Test Task. Implements 2 buttons that let you choose between EMACS and VI and opens up their respective Websites </description>
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
@@ -22,10 +22,9 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
     </extensions>
     <actions>
-        <action id="com.example.demo.PopupDialogAction" class="com.example.demo.PopupDialogAction" text="Alex Demo" description="TEST">
+        <action id="com.example.demo.PopupDialogAction" class="com.example.demo.PopupDialogAction" text="Test Task" description="Popup for Test Task for JetBrains Internship">
             <add-to-group group-id="Internal.UI.Demos" anchor="first"/>
         </action>
 
