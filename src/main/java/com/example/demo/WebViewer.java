@@ -8,11 +8,16 @@ import javax.swing.*;
 import java.awt.*;
 
 
-// Dialog Screen to view webpages
+/**
+ * Dialog Screen to view webpages
+ */
 public class WebViewer extends DialogWrapper {
     private String url;
 
-    // Initialized the WebViewer and adds url to view
+    /**
+     * Initialization of WebViewer and url to use
+     * @param url to use for webviewer
+     */
     public WebViewer(String url){
         super(true);
         setTitle("Web Viewer");
@@ -20,13 +25,22 @@ public class WebViewer extends DialogWrapper {
         init();
     }
 
-    // Removing "Ok" and "Cancel" Buttons
+    /**
+     * Removing "Ok" and "Cancel" Buttons
+     */
     @Override
     protected Action[] createActions(){
         return new Action[0];
     }
 
-    // Adds webview component to Dialog screen
+    /**
+     * Creates WebView Dialog Screen
+     * <p>
+     * Creates Dialog screen and adds Browser
+     * element to it with required url
+     * @return WebView Dialog screen
+     */
+    // Adds WebView component to Dialog screen
     @Nullable
     @Override
     protected JComponent createCenterPanel() {
